@@ -1,46 +1,7 @@
 # 一个基于超过16,000张抓取照片的四分类不当图片模型  
-## 更新  
+## 更新(release)  
 - 添加了第二个模型(v2)，相比于第一个模型(v1)对politic和other有更好的区分能力  
 - 构建Detect类时传入`version`参数 `v1` / `v2`  
-### 下载
-- 下载`./release/dist/SensitiveImgDetect-0.1.5-py3-none-any.whl`文件  
-```shell
-pip install ${path_to_whl}
-```  
-### v1
-- 原始的训练模型  
-```shell
-Class: carton
-  Precision: 0.95
-  Recall: 0.95
-Class: other
-  Precision: 0.92
-  Recall: 0.82
-Class: politic
-  Precision: 0.79
-  Recall: 0.93
-Class: sex
-  Precision: 0.95
-  Recall: 0.88
-Overall Accuracy: 0.89
-```
-### v2  
-- 在v1基础上增加了other数据集的数据
-```shell
-Class: carton
-  Precision: 0.92
-  Recall: 0.88
-Class: other
-  Precision: 0.93
-  Recall: 0.93
-Class: politic
-  Precision: 0.88
-  Recall: 0.88
-Class: sex
-  Precision: 0.86
-  Recall: 0.90
-Overall Accuracy: 0.89
-```
 
 
 ## 序言

@@ -1,49 +1,8 @@
 # A Four-Class Inappropriate Image Model Based on Over 16,000 Scraped Photos  
-## Updates  
+## Updates (release)   
 - Added a second model (v2), which improves the distinction between "politic" and "other" compared to the first model (v1).  
 - Pass the `version` parameter (`v1` / `v2`) when constructing the Detect class.  
 
-### Download
-- Download the `./release/dist/SensitiveImgDetect-0.1.5-py3-none-any.whl` file.  
-```shell
-pip install ${path_to_whl}
-```  
-
-### v1
-- Original trained model  
-```shell
-Class: cartoon
-  Precision: 0.95
-  Recall: 0.95
-Class: other
-  Precision: 0.92
-  Recall: 0.82
-Class: politic
-  Precision: 0.79
-  Recall: 0.93
-Class: sex
-  Precision: 0.95
-  Recall: 0.88
-Overall Accuracy: 0.89
-```
-
-### v2  
-- Enhanced v1 with additional data from the "other" dataset.
-```shell
-Class: cartoon
-  Precision: 0.92
-  Recall: 0.88
-Class: other
-  Precision: 0.93
-  Recall: 0.93
-Class: politic
-  Precision: 0.88
-  Recall: 0.88
-Class: sex
-  Precision: 0.86
-  Recall: 0.90
-Overall Accuracy: 0.89
-```
 
 ## Introduction
 > There are four categories: Cartoon, Pornography, Politics, and Other.
