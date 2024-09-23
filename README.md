@@ -219,4 +219,7 @@ for index, probs in enumerate(predicted_probs_list):
     print(f"图片 {index + 1} 的概率:")
     for class_label, probability in probs.items():
         print(f"{class_label}: {probability}")
-```
+```  
+### 补充  
+> `detect_list*`相比于`detect_single*`会占用更多的内存  
+  

@@ -222,3 +222,6 @@ for index, probs in enumerate(predicted_probs_list):
     for class_label, probability in probs.items():
         print(f"{class_label}: {probability}")
 ```
+### Supplement
+
+> `detect_list*` consumes more memory compared to `detect_single*`.
